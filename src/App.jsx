@@ -168,7 +168,7 @@ function App() {
       </div>
       <div className="card-group">
         <Badge bg="primary">DESIGN</Badge> <Badge bg="secondary">ART</Badge>{" "}
-        <Badge bg="success">UI</Badge> <Badge bg="danger">Danger</Badge>{" "}
+        <Badge bg="success">UI</Badge> <Badge bg="danger">COOL</Badge>{" "}
         <Badge bg="info">GRAPCHIC</Badge>{" "}
       </div>
     </div>
