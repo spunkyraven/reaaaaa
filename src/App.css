@@ -13,4 +13,20 @@
 
 .TIME {
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.carousel {
+    margin: 40px;
+}
+
+.cards {
+    margin: 40px;
+}
+
+.card-group {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
 }

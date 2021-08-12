@@ -10,6 +10,8 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import Timeline from "react-timeline-semantic-ui";
 import { Carousel } from "react-bootstrap";
+import { CardGroup, Card } from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 function App() {
   return (
     <div className="App">
@@ -49,7 +51,43 @@ function App() {
           </Form>
         </Navbar.Collapse>
       </Navbar>
-
+      <Carousel className="carousel" variant="dark">
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./image/MUSHROOM.jpg"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./image/VR.jpg"
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./image/BOX.jpg"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
       <div className="TIME">
         <Timeline
           direction="left"
@@ -70,7 +108,7 @@ function App() {
           color="pink"
           tags={["tag1", "tag2"]}
           lineHeight={3}
-        />
+        ></Timeline>
         <Timeline
           direction="left"
           icon="heart"
@@ -80,7 +118,58 @@ function App() {
           color="orange"
           tags={["tag1", "tag2"]}
           lineHeight={3}
-        />
+        ></Timeline>
+      </div>
+
+      <div>
+        <CardGroup className="cards">
+          <Card>
+            <Card.Img variant="top" src="./image/VR.jpg" />
+            <Card.Body>
+              <Card.Title>VR</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card>
+            <Card.Img variant="top" src="./image/MUSHROOM.jpg" />
+            <Card.Body>
+              <Card.Title>MUSHROOM</Card.Title>
+              <Card.Text>
+                This card has supporting text below as a natural lead-in to
+                additional content.{" "}
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card>
+            <Card.Img variant="top" src="./image/BOX.jpg" />
+            <Card.Body>
+              <Card.Title>BOX</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+        </CardGroup>
+      </div>
+      <div className="card-group">
+        <Badge bg="primary">DESIGN</Badge> <Badge bg="secondary">ART</Badge>{" "}
+        <Badge bg="success">UI</Badge> <Badge bg="danger">Danger</Badge>{" "}
+        <Badge bg="info">GRAPCHIC</Badge>{" "}
       </div>
     </div>
   );
