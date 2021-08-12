@@ -12,6 +12,7 @@ import Timeline from "react-timeline-semantic-ui";
 import { Carousel } from "react-bootstrap";
 import { CardGroup, Card } from "react-bootstrap";
 import { Badge } from "react-bootstrap";
+
 function App() {
   return (
     <div className="App">
@@ -166,6 +167,7 @@ function App() {
           </Card>
         </CardGroup>
       </div>
+
       <div className="card-group">
         <Badge bg="primary">DESIGN</Badge> <Badge bg="secondary">ART</Badge>{" "}
         <Badge bg="success">UI</Badge> <Badge bg="danger">COOL</Badge>{" "}
